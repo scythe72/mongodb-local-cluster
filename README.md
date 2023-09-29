@@ -1,7 +1,6 @@
 # mongodb-local-cluster
 
-Containerized OspManager to quickly to test and verify OpsManager use cases.  
-Perhaps most importantly allows user to mock up environment and deploy changes and see how
+Containerized OspManager to quickly to test and verify OpsManager use cases.  Perhaps most importantly allows user to mock up environment and deploy changes and see how
 it effects automation configuration.  This is a devops tool to aid application development 
 and proof system configurations.
 
@@ -122,7 +121,7 @@ Scroll down to edit the following entries:
 * Download Directory (Linux/Mac OSX)
 * Custom Configurations
 
-Set the Agent log file path to /data/logs and the download directory to /data/pkgs
+Change the Monitoring and Backup Agents **Linux Log File** paths to `/data/logs` and the download directory to `/data/pkgs`
 
 ![Step1][opsmanager_step6]
 
@@ -221,9 +220,9 @@ Select a Deployment Type
 
 ![Step1][opsmanager_step14]
 
-Verify the Data directory and Logfile entries are in the Managed Node /data directory 
+Verify the **Data Directory** and **Log File** entries are in the Managed Node `/data` directory 
 
-Select hosts from the Agent container IDs in the `MongoD Settings`  hostname fields
+Select hosts from the Agent container IDs in the **MongoD Settings**  `hostname` fields
 
 Configure any additional options necessary to reflect the target environment
 
@@ -273,11 +272,11 @@ Connection String:
 mongodb://<user>:<pass>>@localhost:<port>/?authMechanism=DEFAULT&authSource=admin&directConnection=true
 ```
 
-| Setting | Value                                               |
-|---------|-----------------------------------------------------|
-| user    | valid db user                                       |
-| pass    | user password                                       |
-| port    | host port **Only**, **Primary**, or **mongoS** node |
+| Setting | Value                                                  |
+|---------|--------------------------------------------------------|
+| user    | valid db user                                          |
+| pass    | user password                                          |
+| port    | host port of **Only**, **Primary**, or **mongoS** node |
 
 
 Use the connection string to connect to the database using a tool such as MongoDB Compass or mongosh 
