@@ -184,7 +184,7 @@ $ docker compose -f managed-node/docker-compose.yml up --scale managed_node=3 &
 
 ## Verify Agents
 
-Once you have started the Managed Node containers, verify the Agents 
+Once the Managed Node containers are running, verify the Agents 
 are connecting to OpsManager
 
 Select Deployment >> Agents
