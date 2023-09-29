@@ -1,0 +1,29 @@
+services:
+  ops-manager:
+    image: ops-manager:local
+    depends_on:
+      - appdb
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    volumes:
+      - ops-manager-etc:/etc/mongodb-mms
+      - ops-manager-opt:/opt/mongodb
+    networks:
+      - ops-manager
+
+  appdb:
+    image: mongodb:local
+    volumes:
+      - appdb-data:/data
+    networks:
+      - ops-manager
+
+volumes:
+  ops-manager-etc:
+  ops-manager-opt:
+  appdb-data:
+
+networks:
+  ops-manager:
+    name: opsmanager_network

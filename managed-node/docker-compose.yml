@@ -1,0 +1,18 @@
+services:
+  managed_node:
+     image: mms-automation-agent:local
+     ports:
+       - "27017-28017:27017"
+     networks:
+       - ops-manager
+     environment:
+       - mmsGroupId=651587fd11eba73c35f19275
+       - mmsApiKey=6515d50311eba73c35f2672976aa5c08c3dcccc7df4a7f2cff429003
+       - mmsBaseUrl=http://ops-manager:8080
+       - logFile=/data/logs/automation-agent.log
+       - logLevel=INFO
+
+networks:
+  ops-manager:
+    name: opsmanager_network
+    external: true
