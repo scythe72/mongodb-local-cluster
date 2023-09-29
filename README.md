@@ -282,18 +282,18 @@ mongodb://<user>:<pass>>@localhost:<port>/?authMechanism=DEFAULT&authSource=admi
 
 Use the connection string to connect to the database using a tool such as MongoDB Compass or mongosh 
 
-[opsmanager_step1]: .readme/Screen%20Shot%202023-09-28%20at%2010.03.31.png
-[opsmanager_step2]: .readme/Screen%20Shot%202023-09-28%20at%2010.04.40.png
-[opsmanager_step3]: .readme/Screen%20Shot%202023-09-28%20at%2010.15.46.png
-[opsmanager_step4]: .readme/Screen%20Shot%202023-09-28%20at%2010.18.51.png
-[opsmanager_step5]: .readme/Screen%20Shot%202023-09-28%20at%2010.18.51.png
-[opsmanager_step6]: .readme/Screen%20Shot%202023-09-28%20at%2010.23.28.png
-[opsmanager_step7]: .readme/Screen%20Shot%202023-09-28%20at%2019.07.36.png
-[opsmanager_step8]: .readme/Screen%20Shot%202023-09-28%20at%2010.54.54.png
-[opsmanager_step9]: .readme/Screen%20Shot%202023-09-28%20at%2010.58.31.png
-[opsmanager_step10]: .readme/Screen%20Shot%202023-09-28%20at%2014.28.39.png
-[opsmanager_step11]: .readme/Screen%20Shot%202023-09-28%20at%2015.34.28.png
-[opsmanager_step12]: .readme/Screen%20Shot%202023-09-28%20at%2015.34.52.png
-[opsmanager_step13]: .readme/Screen%20Shot%202023-09-28%20at%2018.30.08.png
-[opsmanager_step14]: .readme/Screen%20Shot%202023-09-28%20at%2018.52.02.png
-[opsmanager_step15]: .readme/Screen%20Shot%202023-09-28%20at%2023.01.18.png
+[opsmanager_step1]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/fca90216-77da-4aa4-b5ca-6de5bf5f97dc
+[opsmanager_step2]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/ab6b50ef-5d62-4ff4-b059-ad29582f67ac
+[opsmanager_step3]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/0a167f1a-1f10-40dc-a7bd-ba1080ebdf9a
+[opsmanager_step4]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/a9b62a0a-6ecf-4247-94ae-1ee83dcafc67
+[opsmanager_step5]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/42af5a22-757a-49e9-8c30-6eb0eb90a643
+[opsmanager_step6]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/8d099542-16f8-47bd-b2e8-06b3885f126e
+[opsmanager_step7]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/a41aaee8-a040-44e5-b132-2eed648ee6b5
+[opsmanager_step8]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/a68f5f98-db7d-4d1a-8336-a92501ef7d3
+[opsmanager_step9]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/def0ead2-bb3c-4e82-845b-205b7993f152
+[opsmanager_step10]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/80093b6c-a7e6-4531-b4cf-d2c5b8efe4dd
+[opsmanager_step11]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/9d97b8dc-a6f4-4cdb-aae6-30373f268a71
+[opsmanager_step12]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/d189cb59-2240-4a4d-8269-4ff62a038e25
+[opsmanager_step13]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/8afa72b6-4ad6-47e9-a7f3-7beafb4bbf5f
+[opsmanager_step14]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/e84ca62f-0ed2-457a-96f0-3184702bd4d5
+[opsmanager_step15]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/2fa6583b-d346-4818-9bb0-b571018e0d45
