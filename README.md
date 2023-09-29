@@ -286,7 +286,7 @@ Use the connection string to connect to the database using a tool such as MongoD
 [opsmanager_step2]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/ab6b50ef-5d62-4ff4-b059-ad29582f67ac
 [opsmanager_step3]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/0a167f1a-1f10-40dc-a7bd-ba1080ebdf9a
 [opsmanager_step4]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/42af5a22-757a-49e9-8c30-6eb0eb90a643
-[opsmanager_step5]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/90cb9edd-103e-4126-820d-c36575a1831d
+[opsmanager_step5]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/e9827d46-5278-458a-8592-9c298e7eb22e
 [opsmanager_step6]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/8d099542-16f8-47bd-b2e8-06b3885f126e
 [opsmanager_step7]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/a41aaee8-a040-44e5-b132-2eed648ee6b5
 [opsmanager_step8]: https://github.com/scythe72/mongodb-local-cluster/assets/129642934/a68f5f98-db7d-4d1a-8336-a92501ef7d3
