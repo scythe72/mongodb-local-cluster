@@ -27,6 +27,27 @@ Special thanks for inspiration and technical know-how:
 * docker-opsmanager: An attempt to use the MongoDB Ops Manager inside Docker
 > See: https://github.com/deviantony/docker-opsmanager
 
+# Contents
+
+* [How-to](#how-to)
+  * [Build the OpsManager image](#build-the-opsmanager-image)
+  * [Build the MMS agent image](#build-the-mms-agent-image)
+  * [Start the stack](#start-the-stack)
+  * [Stop the stack](#stop-the-stack)
+* [Setup](#setup)
+  * [Configure OpsManager](#configure-opsmanager)
+  * [Configure MMS Agent](#configure-mms-agent)
+  * [Configure Project](#configure-project)
+  * [Launch Managed Nodes](#launch-managed-nodes)
+  * [Verify Agents](#verify-agents)
+  * [Activate Monitoring](#activate-monitoring)
+* [Deploy A Cluster](#deploy-a-cluster)
+  * [Configure Deployment](#configure-deployment)
+  * [Launch Deployment](#launch-deployment)
+* [Connect to Local Cluster](#connect-to-local-cluster)
+  * [Find node port](#find-node-port)
+  * [Build Connection String](#build-connection-string)
+
 # How-to
 
 ## Build the OpsManager image
@@ -119,22 +140,10 @@ Scroll down to edit the following entries:
 * Monitoring Log Settings
 * Backup Log Settings
 * Download Directory (Linux/Mac OSX)
-* Custom Configurations
 
 Change the Monitoring and Backup Agents **Linux Log File** paths to `/data/logs` and the download directory to `/data/pkgs`
 
 ![Step1][opsmanager_step6]
-
-Edit Custom Configurations 
-
-Add `mmsBaseUrl` to Monitor Configurations:
-
-![Step1][opsmanager_step7]
-
-| Setting     | Value                   |
-|-------------|-------------------------|
-| mmsBaseUrl  | http://ops-manager:8080 |
-
 
 ## Configure Project
 
@@ -197,6 +206,22 @@ Select Deployment >> Servers
 Select `Activate Monitoring` on each Server
 
 ![Step1][opsmanager_step12]
+
+**Review & Deploy** all pending changes
+
+Select Agents >> Downloads & Settings:
+
+![Step1][opsmanager_step5]
+
+Scroll down to Edit Custom Configurations
+
+Add `mmsBaseUrl` to Monitor Configurations:
+
+![Step1][opsmanager_step7]
+
+| Setting     | Value                   |
+|-------------|-------------------------|
+| mmsBaseUrl  | http://ops-manager:8080 |
 
 **Review & Deploy** all pending changes
 
