@@ -30,6 +30,7 @@ Special thanks for inspiration and technical know-how:
 # Contents
 
 * [How-to](#how-to)
+  * [Build the MongoDB image](#build-the-mongodb-image)
   * [Build the OpsManager image](#build-the-opsmanager-image)
   * [Build the MMS agent image](#build-the-mms-agent-image)
   * [Start the stack](#start-the-stack)
@@ -50,7 +51,7 @@ Special thanks for inspiration and technical know-how:
 
 # How-to
 
-## Build MongoDB image
+## Build the MongoDB image
 
 ```
 docker build mongodb/ -t mongodb:local
