@@ -50,16 +50,22 @@ Special thanks for inspiration and technical know-how:
 
 # How-to
 
+## Build MongoDB image
+
+```
+docker build mongodb/ -t mongodb:local
+```
+
 ## Build the OpsManager image
 
 ```
-$docker build ops-manager/ -t ops-manager:local
+docker build ops-manager/ -t ops-manager:local
 ```
 
 ## Build the MMS agent image
 
 ```
-$docker build mms-automation-agent/ -t mms-automation-agent:local
+docker build mms-automation-agent/ -t mms-automation-agent:local
 ```
 
 ## Start the stack
@@ -67,13 +73,13 @@ $docker build mms-automation-agent/ -t mms-automation-agent:local
 Start in either order, but OpsManager takes minutes to be available for connections.
 
 ```
-$ docker compose -f ops-manager/docker-compose.yml up &
+docker compose -f ops-manager/docker-compose.yml up &
 ```
 
 in separate terminal
 
 ```
-$ docker compose -f managed-node/docker-compose.yml up --scale managed_node=<N> &
+docker compose -f managed-node/docker-compose.yml up --scale managed_node=<N> &
 ```
 
 where N is the number of Managed Nodes needed to support your topology.  Each deployed node will require around
@@ -84,18 +90,18 @@ where N is the number of Managed Nodes needed to support your topology.  Each de
 Stop Managed Nodes using:
 
 ```
-$ docker compose -f managed-node/docker-compose.yml down
+docker compose -f managed-node/docker-compose.yml down
 ```
 Stop OpsManager using:
 
 ```
-$ docker compose -f ops-manager/docker-compose.yml down
+docker compose -f ops-manager/docker-compose.yml down
 ```
 
 To reset the OpsManager configuration and history use the docker compose `-v` option:
 
 ```
-$ docker compose -f ops-manager/docker-compose.yml down -v
+docker compose -f ops-manager/docker-compose.yml down -v
 ```
 
 # Setup
@@ -105,6 +111,12 @@ restarts unless the OpsManager container volumes are deleted.  Do not start any 
 is complete.
 
 ## Configure OpsManager
+
+Start the OpsManager container:
+
+```
+docker compose -f ops-manager/docker-compose.yml up &
+```
 
 Connect to http://localhost:8080 and `Sign Up` a new account:
 
@@ -187,7 +199,7 @@ managed_node/docker-compose.yml file or use the `-e` docker compose switch
 Start the containers:
 
 ```
-$ docker compose -f managed-node/docker-compose.yml up --scale managed_node=3 &
+docker compose -f managed-node/docker-compose.yml up --scale managed_node=3 &
 ```
 
 ## Verify Agents
@@ -281,10 +293,13 @@ Run `docker port <container id>`
 
 Save the host port to build a connection string
 
-```
-$docker port <container id>
+``
+$ docker port <container id>
+``
+
+``
 27017/tcp -> 0.0.0.0:<port>
-```
+``
 
 The container port `27017` is mapped to host port `<port>`
 
